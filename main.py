@@ -11,7 +11,7 @@ async def root() :
 
 @app.get('/random')
 async def read_item():
-    path = "D:/minh/peiyanggit/photos"
+    path = "./photos"
     files = os.listdir(path)
     randomfile = random.choice(files)
     image = path + '/' + randomfile
